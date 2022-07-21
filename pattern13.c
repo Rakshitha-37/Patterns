@@ -1,9 +1,9 @@
 /*
-1 
-b b 
-3 3 3 
-d d d d 
-5 5 5 5 5 
+a 
+a b 
+a b c 
+a b c d 
+a b c d e 
 */
 
 #include <stdio.h>
@@ -17,18 +17,10 @@ int main()
     {
         for(int col = 0;col <= row;col++)
         {
-            if((row % 2) == 0)
-            {
-                printf("%d ", row + 1);
-            }
-            else
-            {
-                printf("%c ", row + 97);
-            }
+            printf("%c ", col + 97);
         }
         printf("\n");
     }
 
     return 0;
 }
-
